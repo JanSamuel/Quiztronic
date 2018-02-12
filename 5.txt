@@ -1,0 +1,29 @@
+pytanie 3,A
+3'1 a
+3'2 a
+3'3 a
+3'4 a
+a
+pytanie 3,A
+3'1 b
+3'2 b
+3'3 b
+3'4 b
+b
+pytanie 3,A
+3'1 c
+3'2 c
+3'3 c
+3'4 c
+c
+pytanie 3,A
+3'1 d
+3'2 d
+3'3 d
+3'4 d
+d
+3'1 e
+3'2 e
+3'3 e
+3'4 e
+e

@@ -1,0 +1,29 @@
+pytanie 1,a
+1'1 a
+1'2 a
+1'3 a
+1'4 a
+a
+pytanie 1,b
+1'1 b
+1'2 b
+1'3 b
+1'4 b
+b
+pytanie 1,c
+1'1 c
+1'2 c
+1'3 c
+1'4 c
+c
+pytanie 1,d
+1'1 d
+1'2 d
+1'3 d
+1'4 d
+d
+1'1 e
+1'2 e
+1'3 e
+1'4 e
+e
