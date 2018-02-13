@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include "quiz.h"
 
-void Quiz::how_many_players()
+void Quiz::how_many_players()//function asking about number of player and their in game names
 {
     std::cout << "Enter the number of players"<<std::endl;
     std::cin>>gamers_num;
@@ -35,7 +35,8 @@ void Quiz::how_many_players()
 void Quiz::game()
 {
     Questions quest;
-    for (int i=0;i<=5;i++)//this loop indicates number of questions each player will be asked
+    int num_asked=5;//number of qestion each player is asked during one game
+    for (int i=0;i<num_asked;i++)//this loop indicates number of questions each player will be asked
     {
         for (int j=0;j<gamers_num;j++)
         {
@@ -62,28 +63,30 @@ void Quiz::how_many_points()
     clear();
 }
 
-void Questions::randomize()
+void Questions::randomize()//function that draws the field and the question 
 {
-    field=rand()%3+1;//number of fields included in game
+    int num_fields=4;//number of fildes
+    field=rand()%num_filds;
     //this is sort of template so I didn't put any real ones like
     switch (field)
     {
-    case 1:
+    case 0:
         std::cout<<"thing 1 "<<std::endl;
         break;
-    case 2:
+    case 1:
         std::cout<<"another field "<<std::endl;
         break;
-    case 3:{}
+    case 2:
         std::cout<<" you can create as many "<<std::endl;
         break;
-    case 4:
+    case 3:
         std::cout<<" as you need "<<std::endl;
         break;
     default:
         randomize();
     }
-    number_question=rand()%5+1;//how big is pool of question in each field
+    int qeustion_pool=5;//number of qestion in each field minus 1
+    number_question=rand()%qeustion_pool+1;
 }
 
 void Questions::open()
@@ -103,19 +106,19 @@ void Questions::open()
     //d
     switch (field)// each file in this switch contains one field of questions
     {
-    case 1:
+    case 0:
         file.open("1.txt", std::ios::in);
         break;
-    case 2:
+    case 1:
         file.open("2.txt", std::ios::in);
         break;
-    case 3:
+    case 2:
         file.open("3.txt", std::ios::in);
         break;
-    case 4:
+    case 3:
         file.open("4.txt", std::ios::in);
         break;
-    case 5:
+    case 4:
         file.open("5.txt", std::ios::in);
         break;
     }
