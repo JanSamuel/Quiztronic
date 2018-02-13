@@ -1,3 +1,5 @@
+//quiztronic 3000 by Jan Samuel Owczarek
+
 #include <iostream>
 #include "quiz.h"
 
